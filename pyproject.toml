@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "police-violence"
+version = "0.1.0"
+description = ""
+authors = ["chrisaddy <chris.william.addy@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+airtable-python-wrapper = "^0.15.3"
+pytorch-forecasting = "^0.10.2"
+lightning = "^2022.6.15"
+Hamilton = "^0.1.0"
+prefect = {extras = ["airtable", "templates", "viz", "aws"], version = "^1.2.2"}
+pandera = "^0.11.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+jupyterlab = "^3.4.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
